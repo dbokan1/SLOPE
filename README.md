@@ -24,3 +24,13 @@ Generating optimal cost-to-go data, stored in `data/map_type/ctg_data`, is done 
 To run training, set dataset type, number of epochs and batch size in `train.py`. Options for data balancing are located in loading functions from `load_data.py`.
 
 Evaluation of trained models is done on maps indexed 400 to 500 by running `python eval.py`. Model with a singular search algorithm can be run with the `run_eval` function, while benchmarking both SLOPE algorithms with and without neural cost-to-go is done with `compare_heurs` function. Note pruning thresholds should be manually set.
+
+## Cite 
+If you found SLOPE relevant for your research, please cite it as:
+
+```bibtex
+@inproceedings{bokan2024slope,
+  title={SLOPE: Search with Learned Optimal Pruning-based Expansion},
+  author={Bokan, Davor and Ajanovic, Zlatan and Lacevic, Bakir}
+}
+```
